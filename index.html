@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -9,22 +9,22 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
+  </head>
+  <body>
+    <div class="container">
 
-          <header class="header">
-            <img src="img/logo.png" alt="Logo" class="logo">
-            <form action="#" class="search">
-              <input type="text" class="search__input" placeholder="Search hotels">
-              <button class="search__btn">
-                <svg class="search__icon">
-                  <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
-                </svg>
-              </button>
-            </form>
+      <header class="header">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Search hotels">
+          <button class="search__btn">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+        </form>
 
-            <nav class="user-nav">
+        <nav class="user-nav">
               <div class="user-nav__icon-box">
                 <svg class="user-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-bookmark"></use>
@@ -42,12 +42,12 @@
                 <span class="user-nav__user-name">Jonas</span>
               </div>
               
-            </nav>
-          </header>
+        </nav>
+      </header>
 
-          <div class="content">
-            <nav class="sidebar">
-              <ul class="side-nav">
+      <div class="content">
+        <nav class="sidebar">
+            <ul class="side-nav">
 
                 <li class="side-nav__item side-nav__item--active">
                   <a href="#" class="side-nav__link">
@@ -89,10 +89,10 @@
               <div class="legal">
                 &copy; 2022 by Trillo. All rights reserved.
               </div>
-            </nav>
+        </nav>
 
-            <main class="hotel-view">
-              <div class="gallery">
+        <main class="hotel-view">
+          <div class="gallery">
                 <figure class="gallery__item">
                   <img src="img/hotel-1.jpg" alt="Photo of hotel" class="gallery__photo">
                 </figure>
@@ -102,8 +102,8 @@
                 <figure class="gallery__item">
                   <img src="img/hotel-3.jpg" alt="Photo of hotel" class="gallery__photo">
                 </figure>
-              </div>
-              <div class="overview">
+          </div>
+          <div class="overview">
                 <h1 class="overview__heading">
                   Hotel Las Palmas
                 </h1>
@@ -134,9 +134,10 @@
                   <div class="overview__rating-average">8.6</div>
                   <div class="overview__rating-count">429 votes</div>
                 </div>
-              </div>
+          </div>
 
-              <div class="detail">
+          <div class="detail">
+
                 <div class="desscription">
                   <p class="paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sit excepturi odio neque, voluptatibus itaque nesciunt, ducimus rem voluptate ratione tempora nam, libero cupiditate eos cum non pariatur perferendis eveniet.
@@ -166,14 +167,47 @@
                     </div>
                   </div>
                 </div>
-                <div class="user-reviews">
-                  User review
-                </div>
-              </div>
 
-            </main>
+            <div class="user-reviews">
+                  <figure class="review">
+                    <blockquote class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestias aliquid aliquam blanditiis.</blockquote>
+                    <figcaption class="review__user">
+                      <img src="/img/user-1.jpg" alt="User" class="review__photo">
+                      <div class="review__user-box">
+                        <p class="review__user-name">Nick Smith</p>
+                        <p class="review__user-date">Feb 23rd, 2020</p>
+                      </div>
+                      <div class="review__rating">7.8</div>
+                    </figcaption>
+                  </figure>
+                  <figure class="review">
+                    <blockquote class="review__text">Lorem ipsum amet consectetur adipisicing elit. Expedita molestias aliquid.</blockquote>
+                    <figcaption class="review__user">
+                      <img src="/img/user-2.jpg" alt="User" class="review__photo">
+                      <div class="review__user-box">
+                        <p class="review__user-name">Mary Thomas</p>
+                        <p class="review__user-date">Sept 13th, 2021</p>
+                      </div>
+                      <div class="review__rating">9.3</div>
+                    </figcaption>
+                  </figure>
 
+                  <button class="btn-inline">Show all <span>&rarr;</span></button>
+            </div> <!--End .user-reviews-->
+
+          </div> <!--End .detail-->
+
+          <div class="cta">
+            <h2 class="cta__heading">Good news! We have 4 free rooms for your selected dates!</h2>
+            <button class="btn">
+              <span class="btn-visible">Book now</span>
+              <span class="btn-invisible">Only 4 rooms left</span> 
+            </button>
           </div>
-        </div>
-    </body>
+
+        </main>
+      </div> <!--End .content-->
+    </div> <!--End .container-->
+
+  </body>
 </html>
