@@ -19,6 +19,13 @@
 
   --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
 }
+
+$bp-largest: 90em; //1440px
+$bp-large: 75em; //1200px
+$bp-medium: 51.875em; //830px
+$bp-small: 31.875em; //510px
+
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +37,11 @@
 }
 html {
   box-sizing: border-box;
-  font-size: 62,5%; // 1rem = 10px, 10px/16px = 62,5%
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62,5%
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 body {
   font-family: 'Open Sans', sans-serif;
